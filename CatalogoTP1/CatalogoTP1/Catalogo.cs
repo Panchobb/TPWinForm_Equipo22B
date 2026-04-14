@@ -21,13 +21,16 @@ namespace CatalogoTP1
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            ArticuloNegocio negocio = new ArticuloNegocio();
+            dataGridView1.DataSource = negocio.listar();
 
         }
+        
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
-            ArticuloNegocio negocio =    new ArticuloNegocio();
-           
+            ArticuloNegocio negocio = new ArticuloNegocio();
+            dataGridView1.DataSource = negocio.listar();
         }
     }
 }
