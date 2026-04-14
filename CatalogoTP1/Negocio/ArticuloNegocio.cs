@@ -7,7 +7,7 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace Negocio
 {
-    public class NegocioArticulo
+    public class ArticuloNegocio
     {
         public List<Articulos> listar() // Cambiado a 'Articulo' en singular, asumiendo que corregiste el nombre de la clase
         {

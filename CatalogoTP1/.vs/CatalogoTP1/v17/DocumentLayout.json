@@ -3,35 +3,43 @@
   "WorkspaceRootPath": "C:\\Users\\factu\\OneDrive\\Documentos\\GitHub\\programacion3\\CatalogoTP1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C8F2A9EF-3F0C-4E68-B6AD-CC23BB4E4B87}|Negocio\\Negocio.csproj|c:\\users\\factu\\onedrive\\documentos\\github\\programacion3\\catalogotp1\\negocio\\negociocategorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C8F2A9EF-3F0C-4E68-B6AD-CC23BB4E4B87}|Negocio\\Negocio.csproj|solutionrelative:negocio\\negociocategorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2294663E-C14A-42F5-AF6B-2C2B666C3742}|CatalogoTP1\\CatalogoTP1.csproj|c:\\users\\factu\\onedrive\\documentos\\github\\programacion3\\catalogotp1\\catalogotp1\\catalogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2294663E-C14A-42F5-AF6B-2C2B666C3742}|CatalogoTP1\\CatalogoTP1.csproj|solutionrelative:catalogotp1\\catalogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C8F2A9EF-3F0C-4E68-B6AD-CC23BB4E4B87}|Negocio\\Negocio.csproj|c:\\users\\factu\\onedrive\\documentos\\github\\programacion3\\catalogotp1\\negocio\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2294663E-C14A-42F5-AF6B-2C2B666C3742}|CatalogoTP1\\CatalogoTP1.csproj|c:\\users\\factu\\onedrive\\documentos\\github\\programacion3\\catalogotp1\\catalogotp1\\catalogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2294663E-C14A-42F5-AF6B-2C2B666C3742}|CatalogoTP1\\CatalogoTP1.csproj|solutionrelative:catalogotp1\\catalogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8F2A9EF-3F0C-4E68-B6AD-CC23BB4E4B87}|Negocio\\Negocio.csproj|c:\\users\\factu\\onedrive\\documentos\\github\\programacion3\\catalogotp1\\negocio\\imagennegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8F2A9EF-3F0C-4E68-B6AD-CC23BB4E4B87}|Negocio\\Negocio.csproj|solutionrelative:negocio\\imagennegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8F2A9EF-3F0C-4E68-B6AD-CC23BB4E4B87}|Negocio\\Negocio.csproj|c:\\users\\factu\\onedrive\\documentos\\github\\programacion3\\catalogotp1\\negocio\\categorianegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8F2A9EF-3F0C-4E68-B6AD-CC23BB4E4B87}|Negocio\\Negocio.csproj|solutionrelative:negocio\\categorianegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8F2A9EF-3F0C-4E68-B6AD-CC23BB4E4B87}|Negocio\\Negocio.csproj|c:\\users\\factu\\onedrive\\documentos\\github\\programacion3\\catalogotp1\\negocio\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8F2A9EF-3F0C-4E68-B6AD-CC23BB4E4B87}|Negocio\\Negocio.csproj|solutionrelative:negocio\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8F2A9EF-3F0C-4E68-B6AD-CC23BB4E4B87}|Negocio\\Negocio.csproj|C:\\Users\\factu\\OneDrive\\Documentos\\GitHub\\programacion3\\CatalogoTP1\\negocio\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C8F2A9EF-3F0C-4E68-B6AD-CC23BB4E4B87}|Negocio\\Negocio.csproj|solutionrelative:negocio\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C8F2A9EF-3F0C-4E68-B6AD-CC23BB4E4B87}|Negocio\\Negocio.csproj|c:\\users\\factu\\onedrive\\documentos\\github\\programacion3\\catalogotp1\\negocio\\negocioarticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C8F2A9EF-3F0C-4E68-B6AD-CC23BB4E4B87}|Negocio\\Negocio.csproj|solutionrelative:negocio\\negocioarticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C8F2A9EF-3F0C-4E68-B6AD-CC23BB4E4B87}|Negocio\\Negocio.csproj|c:\\users\\factu\\onedrive\\documentos\\github\\programacion3\\catalogotp1\\negocio\\negocioimagen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C8F2A9EF-3F0C-4E68-B6AD-CC23BB4E4B87}|Negocio\\Negocio.csproj|solutionrelative:negocio\\negocioimagen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BBF8E223-77FF-478C-8F76-E91E1C3A0B77}|Dominio\\Dominio.csproj|c:\\users\\factu\\onedrive\\documentos\\github\\programacion3\\catalogotp1\\dominio\\imagenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BBF8E223-77FF-478C-8F76-E91E1C3A0B77}|Dominio\\Dominio.csproj|C:\\Users\\factu\\OneDrive\\Documentos\\GitHub\\programacion3\\CatalogoTP1\\dominio\\imagenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BBF8E223-77FF-478C-8F76-E91E1C3A0B77}|Dominio\\Dominio.csproj|solutionrelative:dominio\\imagenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BBF8E223-77FF-478C-8F76-E91E1C3A0B77}|Dominio\\Dominio.csproj|c:\\users\\factu\\onedrive\\documentos\\github\\programacion3\\catalogotp1\\dominio\\marcas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BBF8E223-77FF-478C-8F76-E91E1C3A0B77}|Dominio\\Dominio.csproj|C:\\Users\\factu\\OneDrive\\Documentos\\GitHub\\programacion3\\CatalogoTP1\\dominio\\marcas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BBF8E223-77FF-478C-8F76-E91E1C3A0B77}|Dominio\\Dominio.csproj|solutionrelative:dominio\\marcas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BBF8E223-77FF-478C-8F76-E91E1C3A0B77}|Dominio\\Dominio.csproj|c:\\users\\factu\\onedrive\\documentos\\github\\programacion3\\catalogotp1\\dominio\\articulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BBF8E223-77FF-478C-8F76-E91E1C3A0B77}|Dominio\\Dominio.csproj|C:\\Users\\factu\\OneDrive\\Documentos\\GitHub\\programacion3\\CatalogoTP1\\dominio\\articulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BBF8E223-77FF-478C-8F76-E91E1C3A0B77}|Dominio\\Dominio.csproj|solutionrelative:dominio\\articulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BBF8E223-77FF-478C-8F76-E91E1C3A0B77}|Dominio\\Dominio.csproj|c:\\users\\factu\\onedrive\\documentos\\github\\programacion3\\catalogotp1\\dominio\\categorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BBF8E223-77FF-478C-8F76-E91E1C3A0B77}|Dominio\\Dominio.csproj|C:\\Users\\factu\\OneDrive\\Documentos\\GitHub\\programacion3\\CatalogoTP1\\dominio\\categorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BBF8E223-77FF-478C-8F76-E91E1C3A0B77}|Dominio\\Dominio.csproj|solutionrelative:dominio\\categorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -47,11 +55,36 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "NegocioCategorias.cs",
-              "DocumentMoniker": "C:\\Users\\factu\\OneDrive\\Documentos\\GitHub\\programacion3\\CatalogoTP1\\Negocio\\NegocioCategorias.cs",
-              "RelativeDocumentMoniker": "Negocio\\NegocioCategorias.cs",
-              "ToolTip": "C:\\Users\\factu\\OneDrive\\Documentos\\GitHub\\programacion3\\CatalogoTP1\\Negocio\\NegocioCategorias.cs",
-              "RelativeToolTip": "Negocio\\NegocioCategorias.cs",
+              "Title": "Catalogo.cs",
+              "DocumentMoniker": "C:\\Users\\factu\\OneDrive\\Documentos\\GitHub\\programacion3\\CatalogoTP1\\CatalogoTP1\\Catalogo.cs",
+              "RelativeDocumentMoniker": "CatalogoTP1\\Catalogo.cs",
+              "ToolTip": "C:\\Users\\factu\\OneDrive\\Documentos\\GitHub\\programacion3\\CatalogoTP1\\CatalogoTP1\\Catalogo.cs",
+              "RelativeToolTip": "CatalogoTP1\\Catalogo.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAADgvxQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T16:01:34.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Catalogo.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\factu\\OneDrive\\Documentos\\GitHub\\programacion3\\CatalogoTP1\\CatalogoTP1\\Catalogo.cs",
+              "RelativeDocumentMoniker": "CatalogoTP1\\Catalogo.cs",
+              "ToolTip": "C:\\Users\\factu\\OneDrive\\Documentos\\GitHub\\programacion3\\CatalogoTP1\\CatalogoTP1\\Catalogo.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CatalogoTP1\\Catalogo.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T16:01:33.527Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CategoriaNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\factu\\OneDrive\\Documentos\\GitHub\\programacion3\\CatalogoTP1\\Negocio\\CategoriaNegocio.cs",
+              "RelativeDocumentMoniker": "Negocio\\CategoriaNegocio.cs",
+              "ToolTip": "C:\\Users\\factu\\OneDrive\\Documentos\\GitHub\\programacion3\\CatalogoTP1\\Negocio\\CategoriaNegocio.cs",
+              "RelativeToolTip": "Negocio\\CategoriaNegocio.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-14T15:16:36.886Z",
@@ -59,12 +92,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "NegocioArticulo.cs",
-              "DocumentMoniker": "C:\\Users\\factu\\OneDrive\\Documentos\\GitHub\\programacion3\\CatalogoTP1\\Negocio\\NegocioArticulo.cs",
-              "RelativeDocumentMoniker": "Negocio\\NegocioArticulo.cs",
-              "ToolTip": "C:\\Users\\factu\\OneDrive\\Documentos\\GitHub\\programacion3\\CatalogoTP1\\Negocio\\NegocioArticulo.cs",
-              "RelativeToolTip": "Negocio\\NegocioArticulo.cs",
+              "DocumentIndex": 4,
+              "Title": "ArticuloNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\factu\\OneDrive\\Documentos\\GitHub\\programacion3\\CatalogoTP1\\Negocio\\ArticuloNegocio.cs",
+              "RelativeDocumentMoniker": "Negocio\\ArticuloNegocio.cs",
+              "ToolTip": "C:\\Users\\factu\\OneDrive\\Documentos\\GitHub\\programacion3\\CatalogoTP1\\Negocio\\ArticuloNegocio.cs",
+              "RelativeToolTip": "Negocio\\ArticuloNegocio.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-14T15:50:22.752Z",
@@ -72,7 +105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "AccesoDatos.cs",
               "DocumentMoniker": "C:\\Users\\factu\\OneDrive\\Documentos\\GitHub\\programacion3\\CatalogoTP1\\Negocio\\AccesoDatos.cs",
               "RelativeDocumentMoniker": "Negocio\\AccesoDatos.cs",
@@ -80,17 +113,16 @@
               "RelativeToolTip": "Negocio\\AccesoDatos.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T15:30:41.952Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-14T15:30:41.952Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "NegocioImagen.cs",
-              "DocumentMoniker": "C:\\Users\\factu\\OneDrive\\Documentos\\GitHub\\programacion3\\CatalogoTP1\\Negocio\\NegocioImagen.cs",
-              "RelativeDocumentMoniker": "Negocio\\NegocioImagen.cs",
-              "ToolTip": "C:\\Users\\factu\\OneDrive\\Documentos\\GitHub\\programacion3\\CatalogoTP1\\Negocio\\NegocioImagen.cs",
-              "RelativeToolTip": "Negocio\\NegocioImagen.cs",
+              "DocumentIndex": 2,
+              "Title": "ImagenNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\factu\\OneDrive\\Documentos\\GitHub\\programacion3\\CatalogoTP1\\Negocio\\ImagenNegocio.cs",
+              "RelativeDocumentMoniker": "Negocio\\ImagenNegocio.cs",
+              "ToolTip": "C:\\Users\\factu\\OneDrive\\Documentos\\GitHub\\programacion3\\CatalogoTP1\\Negocio\\ImagenNegocio.cs",
+              "RelativeToolTip": "Negocio\\ImagenNegocio.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-14T15:50:51.865Z",
@@ -98,7 +130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Imagenes.cs",
               "DocumentMoniker": "C:\\Users\\factu\\OneDrive\\Documentos\\GitHub\\programacion3\\CatalogoTP1\\Dominio\\Imagenes.cs",
               "RelativeDocumentMoniker": "Dominio\\Imagenes.cs",
@@ -106,12 +138,11 @@
               "RelativeToolTip": "Dominio\\Imagenes.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T15:42:44.217Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-14T15:42:44.217Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Marcas.cs",
               "DocumentMoniker": "C:\\Users\\factu\\OneDrive\\Documentos\\GitHub\\programacion3\\CatalogoTP1\\Dominio\\Marcas.cs",
               "RelativeDocumentMoniker": "Dominio\\Marcas.cs",
@@ -119,12 +150,11 @@
               "RelativeToolTip": "Dominio\\Marcas.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T15:42:47.495Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-14T15:42:47.495Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Articulos.cs",
               "DocumentMoniker": "C:\\Users\\factu\\OneDrive\\Documentos\\GitHub\\programacion3\\CatalogoTP1\\Dominio\\Articulos.cs",
               "RelativeDocumentMoniker": "Dominio\\Articulos.cs",
@@ -132,12 +162,11 @@
               "RelativeToolTip": "Dominio\\Articulos.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T15:42:17.268Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-14T15:42:17.268Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Categorias.cs",
               "DocumentMoniker": "C:\\Users\\factu\\OneDrive\\Documentos\\GitHub\\programacion3\\CatalogoTP1\\Dominio\\Categorias.cs",
               "RelativeDocumentMoniker": "Dominio\\Categorias.cs",
@@ -145,8 +174,7 @@
               "RelativeToolTip": "Dominio\\Categorias.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T15:42:39.591Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-14T15:42:39.591Z"
             }
           ]
         }
