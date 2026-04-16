@@ -57,4 +57,38 @@ namespace Negocio
             }
         }
     }
-}
+            public void agregar(Articulos nuevo)
+        {
+            if (nuevo.marca == null)
+                throw new Exception("La marca no puede ser nula.");
+            if (nuevo.categorias == null)
+                throw new Exception("La categoría no puede ser nula.");
+
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+
+                datos.SetearConsulta(
+                    "INSERT INTO ARTICULOS (Codigo, Nombre, Descripcion, Precio, ImagenUrl, IdMarca, IdCategoria) " +
+                    "VALUES (@Codigo, @Nombre, @Descripcion, @Precio, @ImagenUrl, @IdMarca, @IdCategoria)");
+                datos.SetearParametro("@Codigo", nuevo.Codigo);
+                datos.SetearParametro("@Nombre", nuevo.Nombre);
+                datos.SetearParametro("@Descripcion", nuevo.Descripcion);
+                datos.SetearParametro("@Precio", nuevo.Precio);
+                datos.SetearParametro("@ImagenUrl", nuevo.imagenes.ImagenUrl);
+                datos.SetearParametro("@IdMarca", nuevo.marca.Id);
+                datos.SetearParametro("@IdCategoria", nuevo.categorias.Id);
+
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.CerrarConexion();
+            }
+        }
+
+    }

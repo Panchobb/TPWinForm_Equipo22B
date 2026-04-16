@@ -1,0 +1,195 @@
+﻿namespace CatalogoTP1
+{
+    partial class frmAlta
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.lblCodigo = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.lblDescripcion = new System.Windows.Forms.Label();
+            this.lblMarca = new System.Windows.Forms.Label();
+            this.lblProducto = new System.Windows.Forms.Label();
+            this.lblPrecio = new System.Windows.Forms.Label();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.cbxMarca = new System.Windows.Forms.ComboBox();
+            this.cbxProducto = new System.Windows.Forms.ComboBox();
+            this.pxbArticulo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pxbArticulo)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // lblCodigo
+            // 
+            this.lblCodigo.AutoSize = true;
+            this.lblCodigo.Location = new System.Drawing.Point(35, 12);
+            this.lblCodigo.Name = "lblCodigo";
+            this.lblCodigo.Size = new System.Drawing.Size(40, 13);
+            this.lblCodigo.TabIndex = 0;
+            this.lblCodigo.Text = "Codigo";
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Location = new System.Drawing.Point(31, 39);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(44, 13);
+            this.lblNombre.TabIndex = 1;
+            this.lblNombre.Text = "Nombre";
+            // 
+            // lblDescripcion
+            // 
+            this.lblDescripcion.AutoSize = true;
+            this.lblDescripcion.Location = new System.Drawing.Point(12, 67);
+            this.lblDescripcion.Name = "lblDescripcion";
+            this.lblDescripcion.Size = new System.Drawing.Size(63, 13);
+            this.lblDescripcion.TabIndex = 2;
+            this.lblDescripcion.Text = "Descripcion";
+            // 
+            // lblMarca
+            // 
+            this.lblMarca.AutoSize = true;
+            this.lblMarca.Location = new System.Drawing.Point(38, 96);
+            this.lblMarca.Name = "lblMarca";
+            this.lblMarca.Size = new System.Drawing.Size(37, 13);
+            this.lblMarca.TabIndex = 3;
+            this.lblMarca.Text = "Marca";
+            // 
+            // lblProducto
+            // 
+            this.lblProducto.AutoSize = true;
+            this.lblProducto.Location = new System.Drawing.Point(25, 123);
+            this.lblProducto.Name = "lblProducto";
+            this.lblProducto.Size = new System.Drawing.Size(50, 13);
+            this.lblProducto.TabIndex = 4;
+            this.lblProducto.Text = "Producto";
+            // 
+            // lblPrecio
+            // 
+            this.lblPrecio.AutoSize = true;
+            this.lblPrecio.Location = new System.Drawing.Point(38, 152);
+            this.lblPrecio.Name = "lblPrecio";
+            this.lblPrecio.Size = new System.Drawing.Size(37, 13);
+            this.lblPrecio.TabIndex = 5;
+            this.lblPrecio.Text = "Precio";
+            // 
+            // txtCodigo
+            // 
+            this.txtCodigo.Location = new System.Drawing.Point(100, 9);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(100, 20);
+            this.txtCodigo.TabIndex = 6;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(100, 32);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(100, 20);
+            this.txtNombre.TabIndex = 7;
+            // 
+            // txtDescripcion
+            // 
+            this.txtDescripcion.Location = new System.Drawing.Point(100, 60);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(100, 20);
+            this.txtDescripcion.TabIndex = 8;
+            // 
+            // txtPrecio
+            // 
+            this.txtPrecio.Location = new System.Drawing.Point(100, 149);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(100, 20);
+            this.txtPrecio.TabIndex = 9;
+            // 
+            // cbxMarca
+            // 
+            this.cbxMarca.FormattingEnabled = true;
+            this.cbxMarca.Location = new System.Drawing.Point(100, 88);
+            this.cbxMarca.Name = "cbxMarca";
+            this.cbxMarca.Size = new System.Drawing.Size(121, 21);
+            this.cbxMarca.TabIndex = 10;
+            // 
+            // cbxProducto
+            // 
+            this.cbxProducto.FormattingEnabled = true;
+            this.cbxProducto.Location = new System.Drawing.Point(100, 115);
+            this.cbxProducto.Name = "cbxProducto";
+            this.cbxProducto.Size = new System.Drawing.Size(121, 21);
+            this.cbxProducto.TabIndex = 11;
+            // 
+            // pxbArticulo
+            // 
+            this.pxbArticulo.Location = new System.Drawing.Point(257, 9);
+            this.pxbArticulo.Name = "pxbArticulo";
+            this.pxbArticulo.Size = new System.Drawing.Size(218, 178);
+            this.pxbArticulo.TabIndex = 12;
+            this.pxbArticulo.TabStop = false;
+            // 
+            // frmAlta
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(511, 225);
+            this.Controls.Add(this.pxbArticulo);
+            this.Controls.Add(this.cbxProducto);
+            this.Controls.Add(this.cbxMarca);
+            this.Controls.Add(this.txtPrecio);
+            this.Controls.Add(this.txtDescripcion);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.txtCodigo);
+            this.Controls.Add(this.lblPrecio);
+            this.Controls.Add(this.lblProducto);
+            this.Controls.Add(this.lblMarca);
+            this.Controls.Add(this.lblDescripcion);
+            this.Controls.Add(this.lblNombre);
+            this.Controls.Add(this.lblCodigo);
+            this.Name = "frmAlta";
+            this.Text = "frmAlta";
+            ((System.ComponentModel.ISupportInitialize)(this.pxbArticulo)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label lblCodigo;
+        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.Label lblDescripcion;
+        private System.Windows.Forms.Label lblMarca;
+        private System.Windows.Forms.Label lblProducto;
+        private System.Windows.Forms.Label lblPrecio;
+        private System.Windows.Forms.TextBox txtCodigo;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtDescripcion;
+        private System.Windows.Forms.TextBox txtPrecio;
+        private System.Windows.Forms.ComboBox cbxMarca;
+        private System.Windows.Forms.ComboBox cbxProducto;
+        private System.Windows.Forms.PictureBox pxbArticulo;
+    }
+}
