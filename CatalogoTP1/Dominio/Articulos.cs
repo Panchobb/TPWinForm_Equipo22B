@@ -19,7 +19,7 @@ namespace Dominio
 
         public decimal Precio { get; set; }
         
-        public Imagenes Imagenes { get; set; }
+        public Imagenes imagenes { get; set; }
 
         
     }

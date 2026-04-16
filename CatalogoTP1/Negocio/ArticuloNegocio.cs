@@ -9,20 +9,19 @@ namespace Negocio
 {
     public class ArticuloNegocio
     {
-        public List<Articulos> listar() // Cambiado a 'Articulo' en singular, asumiendo que corregiste el nombre de la clase
+        public List<Articulos> listar() 
         {
             List<Articulos> lista = new List<Articulos>();
             AccesoDatos datos = new AccesoDatos();
 
             try
             {
-                // La consulta está perfecta
                 datos.SetearConsulta(
-                     "SELECT a.Id, a.Codigo, a.Nombre, a.Descripcion, m.Descripcion AS Marca, c.Descripcion AS Categoria, a.Precio, a.IdMarca, a.IdCategoria, i.ImagenUrl " +
-                     "FROM ARTICULOS a " +
-                     "INNER JOIN MARCAS m ON a.IdMarca = m.Id " +
-                     "INNER JOIN CATEGORIAS c ON a.IdCategoria = c.Id " +
-                     "LEFT JOIN IMAGENES i ON a.Id = i.IdArticulo");
+                    "SELECT a.Id, a.Codigo, a.Nombre, a.Descripcion, m.Descripcion AS Marca, c.Descripcion AS Categoria, a.Precio, a.IdMarca, a.IdCategoria, i.ImagenUrl " +
+                    "FROM ARTICULOS a " +
+                    "INNER JOIN MARCAS m ON m.Id = a.IdMarca " +
+                    "INNER JOIN CATEGORIAS c ON c.Id = a.IdCategoria " +
+                    "LEFT JOIN IMAGENES i ON i.IdArticulo = a.Id");
 
                 datos.EjecutarLectura();
                 SqlDataReader lector = datos.Lector;
@@ -30,21 +29,17 @@ namespace Negocio
                 while (lector.Read())
                 {
                     Articulos aux = new Articulos();
-                    aux.Id = (int)lector["Id"]; 
+                    aux.Id = (int)lector["Id"];
                     aux.Codigo = (string)lector["Codigo"];
                     aux.Nombre = (string)lector["Nombre"];
                     aux.Descripcion = (string)lector["Descripcion"];
-                    aux.marca = new Marcas();
-                    aux.marca.Id = (int)lector["IdMarca"];
-                    aux.marca.Descripcion = (string)lector["Marca"];
-                    aux.categorias= new Categorias();
-                    aux.categorias.Id = (int)lector["IdCategoria"];
-                    aux.categorias.Descripcion = (string)lector["Categoria"];
+                    aux.marca = new Marcas { Id = (int)lector["IdMarca"], Descripcion = (string)lector["Marca"] };
+                    aux.categorias = new Categorias { Id = (int)lector["IdCategoria"], Descripcion = (string)lector["Categoria"] };
                     aux.Precio = (decimal)lector["Precio"];
                     if (!(lector["ImagenUrl"] is DBNull))
                     {
-                        aux.Imagenes = new Imagenes();
-                        aux.Imagenes.ImagenUrl = (string)lector["ImagenUrl"];
+                        aux.imagenes = new Imagenes();
+                        aux.imagenes.ImagenUrl = (string)lector["ImagenUrl"];
                     }
 
                     lista.Add(aux);
@@ -52,9 +47,9 @@ namespace Negocio
 
                 return lista;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw ex;
+                throw;
             }
             finally
             {

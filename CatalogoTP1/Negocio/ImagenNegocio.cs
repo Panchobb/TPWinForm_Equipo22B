@@ -13,13 +13,13 @@ namespace Negocio
             var datos = new AccesoDatos();
             try
             {
-                datos.SetearConsulta("SELECT Id, Descripcion FROM Imagenes");
+                datos.SetearConsulta("SELECT Id, IdArticulo, ImagenUrl FROM IMAGENES");
                 datos.EjecutarLectura();
                 while (datos.Lector.Read())
                 {
                     Imagenes aux = new Imagenes();
                     aux.Id = datos.Lector["Id"] != DBNull.Value ? Convert.ToInt32(datos.Lector["Id"]) : 0;
-                    aux.ImagenUrl = Convert.ToString(datos.Lector["ImagenUrl"]);
+                    aux.ImagenUrl = datos.Lector["ImagenUrl"] != DBNull.Value ? Convert.ToString(datos.Lector["ImagenUrl"]) : string.Empty;
                     lista.Add(aux);
                 }
                 return lista;
