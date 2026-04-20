@@ -56,7 +56,7 @@ namespace Negocio
                 datos.CerrarConexion();
             }
         }
-    }
+    
             public void agregar(Articulos nuevo)
         {
             if (nuevo.marca == null)
@@ -92,3 +92,4 @@ namespace Negocio
         }
 
     }
+}

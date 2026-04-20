@@ -1,0 +1,16 @@
+C:\UTN Proyectos\programacion3\CatalogoTP1\CatalogoTP1\obj\Debug\CatalogoTP1.csproj.AssemblyReference.cache
+C:\UTN Proyectos\programacion3\CatalogoTP1\CatalogoTP1\obj\Debug\CatalogoTP1.Catalogo.resources
+C:\UTN Proyectos\programacion3\CatalogoTP1\CatalogoTP1\obj\Debug\CatalogoTP1.frmAlta.resources
+C:\UTN Proyectos\programacion3\CatalogoTP1\CatalogoTP1\obj\Debug\CatalogoTP1.Properties.Resources.resources
+C:\UTN Proyectos\programacion3\CatalogoTP1\CatalogoTP1\obj\Debug\CatalogoTP1.csproj.GenerateResource.cache
+C:\UTN Proyectos\programacion3\CatalogoTP1\CatalogoTP1\obj\Debug\CatalogoTP1.csproj.CoreCompileInputs.cache
+C:\UTN Proyectos\programacion3\CatalogoTP1\CatalogoTP1\bin\Debug\CatalogoTP1.exe.config
+C:\UTN Proyectos\programacion3\CatalogoTP1\CatalogoTP1\bin\Debug\CatalogoTP1.exe
+C:\UTN Proyectos\programacion3\CatalogoTP1\CatalogoTP1\bin\Debug\CatalogoTP1.pdb
+C:\UTN Proyectos\programacion3\CatalogoTP1\CatalogoTP1\bin\Debug\Dominio.dll
+C:\UTN Proyectos\programacion3\CatalogoTP1\CatalogoTP1\bin\Debug\Negocio.dll
+C:\UTN Proyectos\programacion3\CatalogoTP1\CatalogoTP1\bin\Debug\Dominio.pdb
+C:\UTN Proyectos\programacion3\CatalogoTP1\CatalogoTP1\bin\Debug\Negocio.pdb
+C:\UTN Proyectos\programacion3\CatalogoTP1\CatalogoTP1\obj\Debug\Catalogo.0CD0661E.Up2Date
+C:\UTN Proyectos\programacion3\CatalogoTP1\CatalogoTP1\obj\Debug\CatalogoTP1.exe
+C:\UTN Proyectos\programacion3\CatalogoTP1\CatalogoTP1\obj\Debug\CatalogoTP1.pdb

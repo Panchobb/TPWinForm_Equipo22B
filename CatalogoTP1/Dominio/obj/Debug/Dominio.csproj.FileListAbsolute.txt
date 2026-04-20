@@ -1,0 +1,6 @@
+C:\UTN Proyectos\programacion3\CatalogoTP1\Dominio\bin\Debug\Dominio.dll
+C:\UTN Proyectos\programacion3\CatalogoTP1\Dominio\bin\Debug\Dominio.pdb
+C:\UTN Proyectos\programacion3\CatalogoTP1\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
+C:\UTN Proyectos\programacion3\CatalogoTP1\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\UTN Proyectos\programacion3\CatalogoTP1\Dominio\obj\Debug\Dominio.dll
+C:\UTN Proyectos\programacion3\CatalogoTP1\Dominio\obj\Debug\Dominio.pdb

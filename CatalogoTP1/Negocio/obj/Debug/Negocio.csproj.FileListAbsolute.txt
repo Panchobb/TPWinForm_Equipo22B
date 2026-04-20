@@ -1,0 +1,9 @@
+C:\UTN Proyectos\programacion3\CatalogoTP1\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\UTN Proyectos\programacion3\CatalogoTP1\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\UTN Proyectos\programacion3\CatalogoTP1\Negocio\bin\Debug\Negocio.dll
+C:\UTN Proyectos\programacion3\CatalogoTP1\Negocio\bin\Debug\Negocio.pdb
+C:\UTN Proyectos\programacion3\CatalogoTP1\Negocio\bin\Debug\Dominio.dll
+C:\UTN Proyectos\programacion3\CatalogoTP1\Negocio\bin\Debug\Dominio.pdb
+C:\UTN Proyectos\programacion3\CatalogoTP1\Negocio\obj\Debug\Negocio.csproj.Up2Date
+C:\UTN Proyectos\programacion3\CatalogoTP1\Negocio\obj\Debug\Negocio.dll
+C:\UTN Proyectos\programacion3\CatalogoTP1\Negocio\obj\Debug\Negocio.pdb

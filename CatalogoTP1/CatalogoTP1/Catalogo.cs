@@ -69,5 +69,10 @@ namespace CatalogoTP1
                 PbxArticulos.Load("https://efectocolibri.com/wp-content/uploads/2021/01/placeholder.png");
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
