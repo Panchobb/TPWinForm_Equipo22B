@@ -9,7 +9,7 @@ namespace Negocio
 {
     public class ArticuloNegocio
     {
-        public List<Articulos> listar() 
+        public List<Articulos> listar()
         {
             List<Articulos> lista = new List<Articulos>();
             AccesoDatos datos = new AccesoDatos();
@@ -56,8 +56,8 @@ namespace Negocio
                 datos.CerrarConexion();
             }
         }
-    
-            public void agregar(Articulos nuevo)
+
+        public void agregar(Articulos nuevo)
         {
             if (nuevo.marca == null)
                 throw new Exception("La marca no puede ser nula.");
@@ -79,6 +79,56 @@ namespace Negocio
                 datos.SetearParametro("@IdMarca", nuevo.marca.Id);
                 datos.SetearParametro("@IdCategoria", nuevo.categorias.Id);
 
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.CerrarConexion();
+            }
+        }
+
+
+        public void modificado(Articulos aux)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+
+                datos.SetearConsulta(
+                    "UPDATE ARTICULOS SET Codigo = @Codigo, Nombre = @Nombre, Descripcion = @Descripcion, Precio = @Precio, ImagenUrl = @ImagenUrl, IdMarca = @IdMarca, IdCategoria = @IdCategoria " +
+                    "WHERE Id = @Id");
+                datos.SetearParametro("@Codigo", aux.Codigo);
+                datos.SetearParametro("@Nombre", aux.Nombre);
+                datos.SetearParametro("@Descripcion", aux.Descripcion);
+                datos.SetearParametro("@Precio", aux.Precio);
+                datos.SetearParametro("@ImagenUrl", aux.imagenes.ImagenUrl);
+                datos.SetearParametro("@IdMarca", aux.marca.Id);
+                datos.SetearParametro("@IdCategoria", aux.categorias.Id);
+                datos.SetearParametro("@Id", aux.Id);
+
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.CerrarConexion();
+            }
+        }
+        public void eliminar(int id)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+
+                datos.SetearConsulta("DELETE FROM ARTICULOS WHERE Id = @Id");
+                datos.SetearParametro("@Id", id);
                 datos.ejecutarAccion();
             }
             catch (Exception ex)

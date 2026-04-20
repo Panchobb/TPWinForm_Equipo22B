@@ -7,3 +7,12 @@ C:\UTN Proyectos\programacion3\CatalogoTP1\Negocio\bin\Debug\Dominio.pdb
 C:\UTN Proyectos\programacion3\CatalogoTP1\Negocio\obj\Debug\Negocio.csproj.Up2Date
 C:\UTN Proyectos\programacion3\CatalogoTP1\Negocio\obj\Debug\Negocio.dll
 C:\UTN Proyectos\programacion3\CatalogoTP1\Negocio\obj\Debug\Negocio.pdb
+C:\Users\factu\OneDrive\Documentos\GitHub\programacion3\CatalogoTP1\Negocio\bin\Debug\Negocio.dll
+C:\Users\factu\OneDrive\Documentos\GitHub\programacion3\CatalogoTP1\Negocio\bin\Debug\Negocio.pdb
+C:\Users\factu\OneDrive\Documentos\GitHub\programacion3\CatalogoTP1\Negocio\bin\Debug\Dominio.dll
+C:\Users\factu\OneDrive\Documentos\GitHub\programacion3\CatalogoTP1\Negocio\bin\Debug\Dominio.pdb
+C:\Users\factu\OneDrive\Documentos\GitHub\programacion3\CatalogoTP1\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\factu\OneDrive\Documentos\GitHub\programacion3\CatalogoTP1\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\factu\OneDrive\Documentos\GitHub\programacion3\CatalogoTP1\Negocio\obj\Debug\Negocio.csproj.Up2Date
+C:\Users\factu\OneDrive\Documentos\GitHub\programacion3\CatalogoTP1\Negocio\obj\Debug\Negocio.dll
+C:\Users\factu\OneDrive\Documentos\GitHub\programacion3\CatalogoTP1\Negocio\obj\Debug\Negocio.pdb

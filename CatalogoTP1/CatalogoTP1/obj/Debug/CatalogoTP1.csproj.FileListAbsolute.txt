@@ -14,3 +14,22 @@ C:\UTN Proyectos\programacion3\CatalogoTP1\CatalogoTP1\bin\Debug\Negocio.pdb
 C:\UTN Proyectos\programacion3\CatalogoTP1\CatalogoTP1\obj\Debug\Catalogo.0CD0661E.Up2Date
 C:\UTN Proyectos\programacion3\CatalogoTP1\CatalogoTP1\obj\Debug\CatalogoTP1.exe
 C:\UTN Proyectos\programacion3\CatalogoTP1\CatalogoTP1\obj\Debug\CatalogoTP1.pdb
+C:\Users\factu\OneDrive\Documentos\GitHub\programacion3\CatalogoTP1\CatalogoTP1\bin\Debug\CatalogoTP1.exe.config
+C:\Users\factu\OneDrive\Documentos\GitHub\programacion3\CatalogoTP1\CatalogoTP1\bin\Debug\CatalogoTP1.exe
+C:\Users\factu\OneDrive\Documentos\GitHub\programacion3\CatalogoTP1\CatalogoTP1\bin\Debug\CatalogoTP1.pdb
+C:\Users\factu\OneDrive\Documentos\GitHub\programacion3\CatalogoTP1\CatalogoTP1\bin\Debug\Dominio.dll
+C:\Users\factu\OneDrive\Documentos\GitHub\programacion3\CatalogoTP1\CatalogoTP1\bin\Debug\Negocio.dll
+C:\Users\factu\OneDrive\Documentos\GitHub\programacion3\CatalogoTP1\CatalogoTP1\bin\Debug\Dominio.pdb
+C:\Users\factu\OneDrive\Documentos\GitHub\programacion3\CatalogoTP1\CatalogoTP1\bin\Debug\Negocio.pdb
+C:\Users\factu\OneDrive\Documentos\GitHub\programacion3\CatalogoTP1\CatalogoTP1\obj\Debug\CatalogoTP1.csproj.AssemblyReference.cache
+C:\Users\factu\OneDrive\Documentos\GitHub\programacion3\CatalogoTP1\CatalogoTP1\obj\Debug\CatalogoTP1.exe.config
+C:\Users\factu\OneDrive\Documentos\GitHub\programacion3\CatalogoTP1\CatalogoTP1\obj\Debug\CatalogoTP1.Catalogo.resources
+C:\Users\factu\OneDrive\Documentos\GitHub\programacion3\CatalogoTP1\CatalogoTP1\obj\Debug\CatalogoTP1.Properties.Resources.resources
+C:\Users\factu\OneDrive\Documentos\GitHub\programacion3\CatalogoTP1\CatalogoTP1\obj\Debug\CatalogoTP1.csproj.GenerateResource.cache
+C:\Users\factu\OneDrive\Documentos\GitHub\programacion3\CatalogoTP1\CatalogoTP1\obj\Debug\CatalogoTP1.csproj.CoreCompileInputs.cache
+C:\Users\factu\OneDrive\Documentos\GitHub\programacion3\CatalogoTP1\CatalogoTP1\obj\Debug\Catalogo.0CD0661E.Up2Date
+C:\Users\factu\OneDrive\Documentos\GitHub\programacion3\CatalogoTP1\CatalogoTP1\obj\Debug\CatalogoTP1.exe
+C:\Users\factu\OneDrive\Documentos\GitHub\programacion3\CatalogoTP1\CatalogoTP1\obj\Debug\CatalogoTP1.pdb
+C:\Users\factu\OneDrive\Documentos\GitHub\programacion3\CatalogoTP1\CatalogoTP1\obj\Debug\CatalogoTP1.frmAgregar.resources
+C:\Users\factu\OneDrive\Documentos\GitHub\programacion3\CatalogoTP1\CatalogoTP1\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\factu\OneDrive\Documentos\GitHub\programacion3\CatalogoTP1\CatalogoTP1\bin\Debug\System.Configuration.ConfigurationManager.xml

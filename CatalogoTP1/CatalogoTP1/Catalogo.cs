@@ -22,7 +22,8 @@ namespace CatalogoTP1
         {
             InitializeComponent();
             DgvArticulos.SelectionChanged += DgvArticulos_SelectionChanged;
-            
+        
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -36,8 +37,35 @@ namespace CatalogoTP1
             DgvArticulos.Columns["Imagenes"].Visible = false;
             PbxArticulos.SizeMode = PictureBoxSizeMode.Zoom;
         }
+        
+        private void Cargar()
+        {
+            ArticuloNegocio negocio = new ArticuloNegocio();
+            try
+            {
+             
+                listaArticulos = negocio.listar();
 
-  
+             
+                DgvArticulos.DataSource = null;
+
+             
+                DgvArticulos.DataSource = listaArticulos;
+
+             
+                DgvArticulos.Columns["Id"].Visible = false;
+                DgvArticulos.Columns["Imagenes"].Visible = false;
+
+             
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+
+
         private void DgvArticulos_SelectionChanged(object sender, EventArgs e)
         {
             if (DgvArticulos.CurrentRow == null || DgvArticulos.CurrentRow.DataBoundItem == null)
@@ -66,13 +94,15 @@ namespace CatalogoTP1
             catch (Exception)
             {
                
-                PbxArticulos.Load("https://efectocolibri.com/wp-content/uploads/2021/01/placeholder.png");
+                PbxArticulos.Load("https://capacitacion.fundacionbancopampa.com.ar/wp-content/uploads/2024/09/placeholder-4.png");
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            frmAgregar alta = new frmAgregar();
+            alta.ShowDialog();
+            Cargar();
         }
     }
 }
