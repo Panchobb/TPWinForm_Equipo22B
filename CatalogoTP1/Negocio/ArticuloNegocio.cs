@@ -126,9 +126,8 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-
-                datos.SetearConsulta("DELETE FROM ARTICULOS WHERE Id = @Id");
-                datos.SetearParametro("@Id", id);
+                datos.SetearConsulta("delete from ARTICULOS where id = @id");
+                datos.SetearParametro("@id", id);
                 datos.ejecutarAccion();
             }
             catch (Exception ex)
