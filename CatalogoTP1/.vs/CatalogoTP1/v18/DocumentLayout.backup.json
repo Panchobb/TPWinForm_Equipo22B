@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\UTN Proyectos\\programacion3\\CatalogoTP1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2294663E-C14A-42F5-AF6B-2C2B666C3742}|CatalogoTP1\\CatalogoTP1.csproj|C:\\UTN Proyectos\\programacion3\\CatalogoTP1\\catalogotp1\\catalogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2294663E-C14A-42F5-AF6B-2C2B666C3742}|CatalogoTP1\\CatalogoTP1.csproj|solutionrelative:catalogotp1\\catalogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2294663E-C14A-42F5-AF6B-2C2B666C3742}|CatalogoTP1\\CatalogoTP1.csproj|c:\\utn proyectos\\programacion3\\catalogotp1\\catalogotp1\\catalogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2294663E-C14A-42F5-AF6B-2C2B666C3742}|CatalogoTP1\\CatalogoTP1.csproj|solutionrelative:catalogotp1\\catalogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2294663E-C14A-42F5-AF6B-2C2B666C3742}|CatalogoTP1\\CatalogoTP1.csproj|c:\\utn proyectos\\programacion3\\catalogotp1\\catalogotp1\\catalogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2294663E-C14A-42F5-AF6B-2C2B666C3742}|CatalogoTP1\\CatalogoTP1.csproj|solutionrelative:catalogotp1\\catalogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2294663E-C14A-42F5-AF6B-2C2B666C3742}|CatalogoTP1\\CatalogoTP1.csproj|c:\\utn proyectos\\programacion3\\catalogotp1\\catalogotp1\\catalogo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2294663E-C14A-42F5-AF6B-2C2B666C3742}|CatalogoTP1\\CatalogoTP1.csproj|solutionrelative:catalogotp1\\catalogo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,24 +22,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Catalogo.cs",
-              "DocumentMoniker": "C:\\UTN Proyectos\\programacion3\\CatalogoTP1\\CatalogoTP1\\Catalogo.cs",
-              "RelativeDocumentMoniker": "CatalogoTP1\\Catalogo.cs",
-              "ToolTip": "C:\\UTN Proyectos\\programacion3\\CatalogoTP1\\CatalogoTP1\\Catalogo.cs",
-              "RelativeToolTip": "CatalogoTP1\\Catalogo.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAcwGsAAABCAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Catalogo.Designer.cs",
+              "DocumentMoniker": "C:\\UTN Proyectos\\programacion3\\CatalogoTP1\\CatalogoTP1\\Catalogo.Designer.cs",
+              "RelativeDocumentMoniker": "CatalogoTP1\\Catalogo.Designer.cs",
+              "ToolTip": "C:\\UTN Proyectos\\programacion3\\CatalogoTP1\\CatalogoTP1\\Catalogo.Designer.cs",
+              "RelativeToolTip": "CatalogoTP1\\Catalogo.Designer.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAAAJUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-21T04:56:05.163Z",
+              "WhenOpened": "2026-04-22T22:17:55.447Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Catalogo.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\UTN Proyectos\\programacion3\\CatalogoTP1\\CatalogoTP1\\Catalogo.cs",
               "RelativeDocumentMoniker": "CatalogoTP1\\Catalogo.cs",
@@ -44,6 +48,19 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-21T03:30:41.348Z",
               "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Catalogo.cs",
+              "DocumentMoniker": "C:\\UTN Proyectos\\programacion3\\CatalogoTP1\\CatalogoTP1\\Catalogo.cs",
+              "RelativeDocumentMoniker": "CatalogoTP1\\Catalogo.cs",
+              "ToolTip": "C:\\UTN Proyectos\\programacion3\\CatalogoTP1\\CatalogoTP1\\Catalogo.cs",
+              "RelativeToolTip": "CatalogoTP1\\Catalogo.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAAAIUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T04:56:05.163Z",
+              "EditorCaption": ""
             }
           ]
         }

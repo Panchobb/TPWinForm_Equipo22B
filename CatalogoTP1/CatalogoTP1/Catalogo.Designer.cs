@@ -35,6 +35,7 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnFiltro = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DgvArticulos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PbxArticulos)).BeginInit();
             this.SuspendLayout();
@@ -100,11 +101,22 @@
             this.textBox1.Size = new System.Drawing.Size(186, 20);
             this.textBox1.TabIndex = 6;
             // 
+            // btnFiltro
+            // 
+            this.btnFiltro.Location = new System.Drawing.Point(324, 12);
+            this.btnFiltro.Name = "btnFiltro";
+            this.btnFiltro.Size = new System.Drawing.Size(75, 23);
+            this.btnFiltro.TabIndex = 7;
+            this.btnFiltro.Text = "Buscar";
+            this.btnFiltro.UseVisualStyleBackColor = true;
+            this.btnFiltro.Click += new System.EventHandler(this.btnFiltro_Click);
+            // 
             // Catalogo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(958, 450);
+            this.Controls.Add(this.btnFiltro);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnEliminar);
@@ -131,6 +143,7 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnFiltro;
     }
 }
 

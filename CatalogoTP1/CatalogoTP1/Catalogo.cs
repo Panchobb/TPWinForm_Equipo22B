@@ -125,5 +125,15 @@ namespace CatalogoTP1
                 MessageBox.Show(ex.ToString());
             }
         }
+
+        private void btnFiltro_Click(object sender, EventArgs e)
+        {
+            List<Articulos> listaFiltrada;
+
+            listaFiltrada = listaArticulos.FindAll(x => x.Nombre == textBox1.Text);
+
+            DgvArticulos.DataSource = null;
+            DgvArticulos.DataSource = listaFiltrada;
+        }
     }
 }
