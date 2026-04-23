@@ -153,5 +153,14 @@ namespace CatalogoTP1
             if (DgvArticulos.Columns["Imagenes"] != null)
                 DgvArticulos.Columns["Imagenes"].Visible = false;
         }
+
+        private void BtnModificar_Click(object sender, EventArgs e)
+        {
+            Articulos seleccionado;
+            seleccionado= (Articulos)DgvArticulos.CurrentRow.DataBoundItem;
+            frmAgregar modificar = new frmAgregar(seleccionado);
+            modificar.ShowDialog();
+            Cargar();
+        }
     }
 }

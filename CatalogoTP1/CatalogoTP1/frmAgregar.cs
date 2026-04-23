@@ -26,6 +26,18 @@ namespace CatalogoTP1
             
 
         }
+        public frmAgregar(Articulos articulo)
+        {
+            InitializeComponent();
+            this.Load += frmAgregar_Load;
+            txtCodigo.Text = articulo.Codigo;
+            txtNombre.Text = articulo.Nombre;
+            txtDescripcion.Text = articulo.Descripcion;
+            txtPrecio.Text = articulo.Precio.ToString();
+            cbxMarca.SelectedValue = articulo.marca.Id;
+            cbxCategoria.SelectedValue = articulo.categorias.Id;
+            txtImagenUrl.Text = articulo.imagenes.ImagenUrl;
+        }
         private void frmAgregar_Load(object sender, EventArgs e)
         {
             MarcaNegocio marcaNegocio = new MarcaNegocio();
