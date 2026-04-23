@@ -76,5 +76,10 @@ namespace CatalogoTP1
                 MessageBox.Show("Error al agregar el artículo: " + ex.Message);
             }
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

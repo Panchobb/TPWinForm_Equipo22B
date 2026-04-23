@@ -42,6 +42,23 @@ namespace Negocio
 
 
         }
+        public int ejecutarAccionScalar()
+        {
+            comando.Connection = conexion;
+            try
+            {
+                conexion.Open();
+                return (int)comando.ExecuteScalar();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                conexion.Close();
+            }
+        }
         public void SetearParametro(string nombre, object valor)
         {
             comando.Parameters.AddWithValue(nombre, valor);

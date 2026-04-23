@@ -4,3 +4,9 @@ C:\UTN Proyectos\programacion3\CatalogoTP1\Dominio\obj\Debug\Dominio.csproj.Asse
 C:\UTN Proyectos\programacion3\CatalogoTP1\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 C:\UTN Proyectos\programacion3\CatalogoTP1\Dominio\obj\Debug\Dominio.dll
 C:\UTN Proyectos\programacion3\CatalogoTP1\Dominio\obj\Debug\Dominio.pdb
+C:\Users\factu\OneDrive\Documentos\GitHub\programacion3\CatalogoTP1\Dominio\bin\Debug\Dominio.dll
+C:\Users\factu\OneDrive\Documentos\GitHub\programacion3\CatalogoTP1\Dominio\bin\Debug\Dominio.pdb
+C:\Users\factu\OneDrive\Documentos\GitHub\programacion3\CatalogoTP1\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
+C:\Users\factu\OneDrive\Documentos\GitHub\programacion3\CatalogoTP1\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\factu\OneDrive\Documentos\GitHub\programacion3\CatalogoTP1\Dominio\obj\Debug\Dominio.dll
+C:\Users\factu\OneDrive\Documentos\GitHub\programacion3\CatalogoTP1\Dominio\obj\Debug\Dominio.pdb

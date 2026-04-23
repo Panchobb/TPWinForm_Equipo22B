@@ -67,54 +67,39 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-
-                datos.SetearConsulta(
-                    "INSERT INTO ARTICULOS (Codigo, Nombre, Descripcion, Precio, ImagenUrl, IdMarca, IdCategoria) " +
-                    "VALUES (@Codigo, @Nombre, @Descripcion, @Precio, @ImagenUrl, @IdMarca, @IdCategoria)");
+                
+                datos.SetearConsulta("INSERT INTO ARTICULOS (Codigo, Nombre, Descripcion, Precio, IdMarca, IdCategoria) OUTPUT inserted.Id VALUES (@Codigo, @Nombre, @Descripcion, @Precio, @IdMarca, @IdCategoria)");
                 datos.SetearParametro("@Codigo", nuevo.Codigo);
                 datos.SetearParametro("@Nombre", nuevo.Nombre);
                 datos.SetearParametro("@Descripcion", nuevo.Descripcion);
                 datos.SetearParametro("@Precio", nuevo.Precio);
-                datos.SetearParametro("@ImagenUrl", nuevo.imagenes.ImagenUrl);
                 datos.SetearParametro("@IdMarca", nuevo.marca.Id);
                 datos.SetearParametro("@IdCategoria", nuevo.categorias.Id);
 
-                datos.ejecutarAccion();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            finally
-            {
-                datos.CerrarConexion();
-            }
-        }
+                
+                int idArticuloGenerado = datos.ejecutarAccionScalar();
 
+                
+                if (nuevo.imagenes != null && !string.IsNullOrWhiteSpace(nuevo.imagenes.ImagenUrl))
+                {
+                    AccesoDatos datosImagen = new AccesoDatos();
+                    try
+                    {
+                        datosImagen.SetearConsulta("INSERT INTO IMAGENES (IdArticulo, ImagenUrl) VALUES (@IdArticulo, @Url)");
+                        datosImagen.SetearParametro("@IdArticulo", idArticuloGenerado);
+                        datosImagen.SetearParametro("@Url", nuevo.imagenes.ImagenUrl);
 
-        public void modificado(Articulos aux)
-        {
-            AccesoDatos datos = new AccesoDatos();
-            try
-            {
-
-                datos.SetearConsulta(
-                    "UPDATE ARTICULOS SET Codigo = @Codigo, Nombre = @Nombre, Descripcion = @Descripcion, Precio = @Precio, ImagenUrl = @ImagenUrl, IdMarca = @IdMarca, IdCategoria = @IdCategoria " +
-                    "WHERE Id = @Id");
-                datos.SetearParametro("@Codigo", aux.Codigo);
-                datos.SetearParametro("@Nombre", aux.Nombre);
-                datos.SetearParametro("@Descripcion", aux.Descripcion);
-                datos.SetearParametro("@Precio", aux.Precio);
-                datos.SetearParametro("@ImagenUrl", aux.imagenes.ImagenUrl);
-                datos.SetearParametro("@IdMarca", aux.marca.Id);
-                datos.SetearParametro("@IdCategoria", aux.categorias.Id);
-                datos.SetearParametro("@Id", aux.Id);
-
-                datos.ejecutarAccion();
+                        datosImagen.ejecutarAccion();
+                    }
+                    finally
+                    {
+                        datosImagen.CerrarConexion();
+                    }
+                }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw ex;
+                throw;
             }
             finally
             {
