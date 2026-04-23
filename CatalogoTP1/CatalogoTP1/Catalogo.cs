@@ -129,11 +129,29 @@ namespace CatalogoTP1
         private void btnFiltro_Click(object sender, EventArgs e)
         {
             List<Articulos> listaFiltrada;
+            string filtro = textBox1.Text.ToUpper();
 
-            listaFiltrada = listaArticulos.FindAll(x => x.Nombre == textBox1.Text);
-
+            if (string.IsNullOrWhiteSpace(filtro))
+            {
+                listaFiltrada = listaArticulos;
+            }
+            else
+            {
+                listaFiltrada = listaArticulos.FindAll(x =>
+                    x.Codigo.ToUpper().Contains(filtro) ||
+                    x.Nombre.ToUpper().Contains(filtro) ||
+                    x.Descripcion.ToUpper().Contains(filtro) ||
+                    x.marca.Descripcion.ToUpper().Contains(filtro) ||
+                    x.categorias.Descripcion.ToUpper().Contains(filtro)
+                );
+            }
             DgvArticulos.DataSource = null;
             DgvArticulos.DataSource = listaFiltrada;
+            if (DgvArticulos.Columns["Id"] != null)
+                DgvArticulos.Columns["Id"].Visible = false;
+
+            if (DgvArticulos.Columns["Imagenes"] != null)
+                DgvArticulos.Columns["Imagenes"].Visible = false;
         }
     }
 }
