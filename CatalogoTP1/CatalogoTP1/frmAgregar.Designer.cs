@@ -45,6 +45,7 @@
             this.lblImagenUrl = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
+            this.BtnAgregarImagen = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pxbArticulo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -162,6 +163,7 @@
             this.txtImagenUrl.Name = "txtImagenUrl";
             this.txtImagenUrl.Size = new System.Drawing.Size(121, 20);
             this.txtImagenUrl.TabIndex = 14;
+            this.txtImagenUrl.Leave += new System.EventHandler(this.txtImagenUrl_Leave);
             // 
             // lblImagenUrl
             // 
@@ -192,11 +194,23 @@
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click_1);
             // 
+            // BtnAgregarImagen
+            // 
+            this.BtnAgregarImagen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAgregarImagen.Location = new System.Drawing.Point(145, 201);
+            this.BtnAgregarImagen.Name = "BtnAgregarImagen";
+            this.BtnAgregarImagen.Size = new System.Drawing.Size(28, 24);
+            this.BtnAgregarImagen.TabIndex = 19;
+            this.BtnAgregarImagen.Text = "+";
+            this.BtnAgregarImagen.UseVisualStyleBackColor = true;
+            this.BtnAgregarImagen.Click += new System.EventHandler(this.BtnAgregarImagen_Click);
+            // 
             // frmAgregar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(511, 300);
+            this.Controls.Add(this.BtnAgregarImagen);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.txtImagenUrl);
@@ -241,5 +255,6 @@
         private System.Windows.Forms.Label lblImagenUrl;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnAceptar;
+        private System.Windows.Forms.Button BtnAgregarImagen;
     }
 }

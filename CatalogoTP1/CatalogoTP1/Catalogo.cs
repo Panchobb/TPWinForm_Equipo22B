@@ -72,6 +72,12 @@ namespace CatalogoTP1
                 return;
 
             Articulos seleccionado = (Articulos)DgvArticulos.CurrentRow.DataBoundItem;
+            txbCodigo.Text = seleccionado.Codigo;
+            txbNombre.Text = seleccionado.Nombre;
+            txbDescripcion.Text = seleccionado.Descripcion;
+            txbCategoria.Text = seleccionado.categorias.Descripcion;
+            txbMarca.Text = seleccionado.marca.Descripcion;
+            txbPrecio.Text= seleccionado.Precio.ToString("0.00");
 
   
             if (seleccionado.imagenes != null && !string.IsNullOrWhiteSpace(seleccionado.imagenes.ImagenUrl))

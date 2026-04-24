@@ -18,12 +18,14 @@ namespace CatalogoTP1
 {
     public partial class frmAgregar : Form
     {
+        private Articulos Articulos = null;
+        private OpenFileDialog archivo = null;
         public frmAgregar()
         {
             InitializeComponent();
             this.Load += frmAgregar_Load;
-            
-            
+
+
 
         }
         public frmAgregar(Articulos articulo)
@@ -57,9 +59,10 @@ namespace CatalogoTP1
             }
 
         }
+
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnAceptar_Click_1(object sender, EventArgs e)
@@ -87,11 +90,51 @@ namespace CatalogoTP1
             {
                 MessageBox.Show("Error al agregar el artículo: " + ex.Message);
             }
+            if (archivo != null && txtImagenUrl.Text.ToUpper().Contains("HTTP"))
+            {
+                File.Copy(archivo.FileName, ConfigurationManager.AppSettings["carpeta-imagenes"] + archivo.FileName);
+            }
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
+        private void BtnAgregarImagen_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog archivo = new OpenFileDialog();
+            archivo = new OpenFileDialog();
+            archivo.Filter = "Imagenes|*.jpg;*.jpeg;*.png;*.gif;*.bmp";
+            if (archivo.ShowDialog() == DialogResult.OK)
+            {
+                txtImagenUrl.Text = archivo.FileName;
+                CargarImagen(archivo.FileName);
+
+                
+
+            }
+
+        }
+
+        private void txtImagenUrl_Leave(object sender, EventArgs e)
+        {
+            CargarImagen(txtImagenUrl.Text);
+        }
+        private void CargarImagen(string imagen)
+        {
+            try
+            {
+                pxbArticulo.Load(imagen);
+            }
+            catch (Exception)
+            {
+
+                pxbArticulo.Load("https://capacitacion.fundacionbancopampa.com.ar/wp-content/uploads/2024/09/placeholder-4.png");
+            }
+
+
+        }
+
     }
 }
