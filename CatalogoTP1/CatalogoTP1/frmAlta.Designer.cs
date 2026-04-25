@@ -1,6 +1,6 @@
 ﻿namespace CatalogoTP1
 {
-    partial class frmAgregar
+    partial class frmAlta
     {
         /// <summary>
         /// Required designer variable.
@@ -60,7 +60,7 @@
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(31, 39);
+            this.lblNombre.Location = new System.Drawing.Point(35, 55);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(44, 13);
             this.lblNombre.TabIndex = 1;
@@ -69,7 +69,7 @@
             // lblDescripcion
             // 
             this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.Location = new System.Drawing.Point(12, 67);
+            this.lblDescripcion.Location = new System.Drawing.Point(35, 94);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(63, 13);
             this.lblDescripcion.TabIndex = 2;
@@ -78,7 +78,7 @@
             // lblMarca
             // 
             this.lblMarca.AutoSize = true;
-            this.lblMarca.Location = new System.Drawing.Point(38, 96);
+            this.lblMarca.Location = new System.Drawing.Point(35, 140);
             this.lblMarca.Name = "lblMarca";
             this.lblMarca.Size = new System.Drawing.Size(37, 13);
             this.lblMarca.TabIndex = 3;
@@ -87,7 +87,7 @@
             // lblCategoria
             // 
             this.lblCategoria.AutoSize = true;
-            this.lblCategoria.Location = new System.Drawing.Point(25, 123);
+            this.lblCategoria.Location = new System.Drawing.Point(35, 180);
             this.lblCategoria.Name = "lblCategoria";
             this.lblCategoria.Size = new System.Drawing.Size(52, 13);
             this.lblCategoria.TabIndex = 4;
@@ -96,7 +96,7 @@
             // lblPrecio
             // 
             this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Location = new System.Drawing.Point(38, 152);
+            this.lblPrecio.Location = new System.Drawing.Point(35, 226);
             this.lblPrecio.Name = "lblPrecio";
             this.lblPrecio.Size = new System.Drawing.Size(37, 13);
             this.lblPrecio.TabIndex = 5;
@@ -104,37 +104,37 @@
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(100, 9);
+            this.txtCodigo.Location = new System.Drawing.Point(115, 9);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(100, 20);
+            this.txtCodigo.Size = new System.Drawing.Size(121, 20);
             this.txtCodigo.TabIndex = 6;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(100, 32);
+            this.txtNombre.Location = new System.Drawing.Point(115, 48);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(100, 20);
+            this.txtNombre.Size = new System.Drawing.Size(121, 20);
             this.txtNombre.TabIndex = 7;
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(100, 60);
+            this.txtDescripcion.Location = new System.Drawing.Point(115, 87);
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(100, 20);
+            this.txtDescripcion.Size = new System.Drawing.Size(121, 20);
             this.txtDescripcion.TabIndex = 8;
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(100, 149);
+            this.txtPrecio.Location = new System.Drawing.Point(115, 219);
             this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(100, 20);
+            this.txtPrecio.Size = new System.Drawing.Size(121, 20);
             this.txtPrecio.TabIndex = 9;
             // 
             // cbxMarca
             // 
             this.cbxMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxMarca.FormattingEnabled = true;
-            this.cbxMarca.Location = new System.Drawing.Point(100, 88);
+            this.cbxMarca.Location = new System.Drawing.Point(115, 132);
             this.cbxMarca.Name = "cbxMarca";
             this.cbxMarca.Size = new System.Drawing.Size(121, 21);
             this.cbxMarca.TabIndex = 10;
@@ -143,22 +143,22 @@
             // 
             this.cbxCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxCategoria.FormattingEnabled = true;
-            this.cbxCategoria.Location = new System.Drawing.Point(100, 115);
+            this.cbxCategoria.Location = new System.Drawing.Point(115, 172);
             this.cbxCategoria.Name = "cbxCategoria";
             this.cbxCategoria.Size = new System.Drawing.Size(121, 21);
             this.cbxCategoria.TabIndex = 11;
             // 
             // pxbArticulo
             // 
-            this.pxbArticulo.Location = new System.Drawing.Point(257, 9);
+            this.pxbArticulo.Location = new System.Drawing.Point(321, 12);
             this.pxbArticulo.Name = "pxbArticulo";
-            this.pxbArticulo.Size = new System.Drawing.Size(218, 178);
+            this.pxbArticulo.Size = new System.Drawing.Size(218, 215);
             this.pxbArticulo.TabIndex = 12;
             this.pxbArticulo.TabStop = false;
             // 
             // txtImagenUrl
             // 
-            this.txtImagenUrl.Location = new System.Drawing.Point(100, 175);
+            this.txtImagenUrl.Location = new System.Drawing.Point(115, 261);
             this.txtImagenUrl.Name = "txtImagenUrl";
             this.txtImagenUrl.Size = new System.Drawing.Size(121, 20);
             this.txtImagenUrl.TabIndex = 14;
@@ -166,7 +166,7 @@
             // lblImagenUrl
             // 
             this.lblImagenUrl.AutoSize = true;
-            this.lblImagenUrl.Location = new System.Drawing.Point(33, 182);
+            this.lblImagenUrl.Location = new System.Drawing.Point(35, 264);
             this.lblImagenUrl.Name = "lblImagenUrl";
             this.lblImagenUrl.Size = new System.Drawing.Size(42, 13);
             this.lblImagenUrl.TabIndex = 13;
@@ -174,7 +174,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(41, 248);
+            this.btnCancelar.Location = new System.Drawing.Point(28, 311);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(132, 28);
             this.btnCancelar.TabIndex = 16;
@@ -184,7 +184,7 @@
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(324, 248);
+            this.btnAceptar.Location = new System.Drawing.Point(252, 311);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(132, 28);
             this.btnAceptar.TabIndex = 17;
@@ -192,11 +192,11 @@
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click_1);
             // 
-            // frmAgregar
+            // frmAlta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(511, 300);
+            this.ClientSize = new System.Drawing.Size(958, 455);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.txtImagenUrl);
@@ -214,8 +214,8 @@
             this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblCodigo);
-            this.Name = "frmAgregar";
-            this.Text = "frmAlta";
+            this.Name = "frmAlta";
+            this.Text = "Agregar articulo";
             ((System.ComponentModel.ISupportInitialize)(this.pxbArticulo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

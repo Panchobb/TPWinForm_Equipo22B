@@ -33,5 +33,83 @@ namespace Negocio
                 datos.CerrarConexion();
             }
         }
+
+        public void modificar(Marcas marca)
+        {
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.SetearConsulta(
+                    "UPDATE MARCAS SET " +
+                    "Descripcion = @Descripcion " +
+                    "WHERE Id = @Id"
+                );
+
+                datos.SetearParametro("@Descripcion", marca.Descripcion);
+                datos.SetearParametro("@Id", marca.Id);
+
+                datos.ejecutarAccion();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                datos.CerrarConexion();
+            }
+        }
+
+
+        public void agregar(Marcas marcaNueva)
+        {
+            if (string.IsNullOrWhiteSpace(marcaNueva.Descripcion))
+                throw new Exception("La descripción no puede estar vacía.");
+
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.SetearConsulta(
+                    "INSERT INTO MARCAS (Descripcion) VALUES (@Descripcion)"
+                );
+
+                datos.SetearParametro("@Descripcion", marcaNueva.Descripcion);
+                datos.ejecutarAccion();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                datos.CerrarConexion();
+            }
+        }
+
+        public void eliminar(int id)
+        {
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.SetearConsulta(
+                    "DELETE FROM MARCAS WHERE Id = @Id"
+                );
+
+                datos.SetearParametro("@Id", id);
+
+                datos.ejecutarAccion();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                datos.CerrarConexion();
+            }
+        }
     }
 }

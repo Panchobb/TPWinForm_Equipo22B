@@ -22,7 +22,7 @@ namespace CatalogoTP1
         {
             InitializeComponent();
             DgvArticulos.SelectionChanged += DgvArticulos_SelectionChanged;
-        
+
 
         }
 
@@ -36,27 +36,33 @@ namespace CatalogoTP1
             DgvArticulos.Columns["Id"].Visible = false;
             DgvArticulos.Columns["Imagenes"].Visible = false;
             PbxArticulos.SizeMode = PictureBoxSizeMode.Zoom;
+
+            cboCampo.Items.Add("Precio");
+            cboCampo.Items.Add("Nombre");
+            cboCampo.Items.Add("Marca");
+            cboCampo.Items.Add("Categoria");
+            cboCampo.Items.Add("Descripcion");
         }
-        
+
         private void Cargar()
         {
             ArticuloNegocio negocio = new ArticuloNegocio();
             try
             {
-             
+
                 listaArticulos = negocio.listar();
 
-             
+
                 DgvArticulos.DataSource = null;
 
-             
+
                 DgvArticulos.DataSource = listaArticulos;
 
-             
+
                 DgvArticulos.Columns["Id"].Visible = false;
                 DgvArticulos.Columns["Imagenes"].Visible = false;
 
-             
+
             }
             catch (Exception ex)
             {
@@ -73,14 +79,14 @@ namespace CatalogoTP1
 
             Articulos seleccionado = (Articulos)DgvArticulos.CurrentRow.DataBoundItem;
 
-  
+
             if (seleccionado.imagenes != null && !string.IsNullOrWhiteSpace(seleccionado.imagenes.ImagenUrl))
             {
                 CargarImagen(seleccionado.imagenes.ImagenUrl);
             }
             else
             {
-             
+
                 CargarImagen("");
             }
         }
@@ -93,14 +99,14 @@ namespace CatalogoTP1
             }
             catch (Exception)
             {
-               
+
                 PbxArticulos.Load("https://capacitacion.fundacionbancopampa.com.ar/wp-content/uploads/2024/09/placeholder-4.png");
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            frmAgregar alta = new frmAgregar();
+            frmAlta alta = new frmAlta();
             alta.ShowDialog();
             Cargar();
         }
@@ -128,38 +134,122 @@ namespace CatalogoTP1
 
         private void btnFiltro_Click(object sender, EventArgs e)
         {
-            List<Articulos> listaFiltrada;
+
+            ArticuloNegocio articuloNegocio = new ArticuloNegocio();
+
+
+            string campo = cboCampo.Text;
+            string criterio = cboCriterio.Text;
             string filtro = textBox1.Text.ToUpper();
 
-            if (string.IsNullOrWhiteSpace(filtro))
+            if (campo == "" && criterio == "")
             {
-                listaFiltrada = listaArticulos;
-            }
-            else
-            {
-                listaFiltrada = listaArticulos.FindAll(x =>
-                    x.Codigo.ToUpper().Contains(filtro) ||
-                    x.Nombre.ToUpper().Contains(filtro) ||
-                    x.Descripcion.ToUpper().Contains(filtro) ||
-                    x.marca.Descripcion.ToUpper().Contains(filtro) ||
-                    x.categorias.Descripcion.ToUpper().Contains(filtro)
-                );
-            }
-            DgvArticulos.DataSource = null;
-            DgvArticulos.DataSource = listaFiltrada;
-            if (DgvArticulos.Columns["Id"] != null)
-                DgvArticulos.Columns["Id"].Visible = false;
+                List<Articulos> listaFiltrada;
 
-            if (DgvArticulos.Columns["Imagenes"] != null)
-                DgvArticulos.Columns["Imagenes"].Visible = false;
+                if (string.IsNullOrWhiteSpace(filtro))
+                {
+                    listaFiltrada = listaArticulos;
+                }
+                else
+                {
+                    listaFiltrada = listaArticulos.FindAll(x =>
+                        x.Codigo.ToUpper().Contains(filtro) ||
+                        x.Nombre.ToUpper().Contains(filtro) ||
+                        x.Descripcion.ToUpper().Contains(filtro) ||
+                        x.marca.Descripcion.ToUpper().Contains(filtro) ||
+                        x.categorias.Descripcion.ToUpper().Contains(filtro)
+                    );
+                }
+                DgvArticulos.DataSource = null;
+                DgvArticulos.DataSource = listaFiltrada;
+                if (DgvArticulos.Columns["Id"] != null)
+                    DgvArticulos.Columns["Id"].Visible = false;
+
+                if (DgvArticulos.Columns["Imagenes"] != null)
+                    DgvArticulos.Columns["Imagenes"].Visible = false;
+
+            } else
+            {
+
+                try
+                {
+
+                    DgvArticulos.DataSource = articuloNegocio.Filtrar(campo, criterio, filtro);
+
+
+                }
+                catch (Exception ex)
+                {
+
+                    throw ex;
+                }
+
+            }
+
         }
 
         private void BtnModificar_Click(object sender, EventArgs e)
         {
             Articulos seleccionado;
-            seleccionado= (Articulos)DgvArticulos.CurrentRow.DataBoundItem;
-            frmAgregar modificar = new frmAgregar(seleccionado);
+            seleccionado = (Articulos)DgvArticulos.CurrentRow.DataBoundItem;
+            frmAlta modificar = new frmAlta(seleccionado);
             modificar.ShowDialog();
+            Cargar();
+        }
+
+      
+
+        private void cboCampo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string opcion = cboCampo.SelectedItem.ToString();
+
+            if (opcion == "Precio")
+            {
+                cboCriterio.Items.Clear();
+                cboCriterio.Items.Add("Mayor a");
+                cboCriterio.Items.Add("Menor a");
+                cboCriterio.Items.Add("Igual a");
+            } else if (opcion == "Nombre")
+            {
+                cboCriterio.Items.Clear();
+                cboCriterio.Items.Add("Comienza con");
+                cboCriterio.Items.Add("Termina con");
+                cboCriterio.Items.Add("Contiene");
+            } else if (opcion == "Marca")
+            {
+                cboCriterio.Items.Clear();
+                cboCriterio.Items.Add("Comienza con");
+                cboCriterio.Items.Add("Termina con");
+                cboCriterio.Items.Add("contiene");
+            } else if (opcion == "Categoria")
+            {
+                cboCriterio.Items.Clear();
+                cboCriterio.Items.Add("Comienza con");
+                cboCriterio.Items.Add("Termina con");
+                cboCriterio.Items.Add("contiene");
+            } else if (opcion == "Descripcion")
+            {
+                cboCriterio.Items.Clear();
+                cboCriterio.Items.Add("Comienza con");
+                cboCriterio.Items.Add("Termina con");
+                cboCriterio.Items.Add("contiene");
+            }
+          
+        }
+
+        private void btnDetalle_Click(object sender, EventArgs e)
+        {
+            Articulos seleccionado;
+            seleccionado = (Articulos)DgvArticulos.CurrentRow.DataBoundItem;
+            frmDetalle mostrar = new frmDetalle(seleccionado);
+            mostrar.ShowDialog();
+            Cargar();
+        }
+
+        private void btnConfiguracion_Click(object sender, EventArgs e)
+        {
+            frmConfiguracion configuracion = new frmConfiguracion();
+            configuracion.ShowDialog();
             Cargar();
         }
     }
