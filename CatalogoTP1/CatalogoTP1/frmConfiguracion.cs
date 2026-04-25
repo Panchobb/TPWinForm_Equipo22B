@@ -99,7 +99,7 @@ namespace CatalogoTP1
                     Categorias categoria = new Categorias();
                     categoria.Descripcion = descripcion;
 
-                    negocio.agregar(categoria);
+                    negocio.Agregar(categoria);
 
                     MessageBox.Show("Categoría agregada correctamente.");
 
@@ -147,7 +147,7 @@ namespace CatalogoTP1
                     categoria.Id = id;
                     categoria.Descripcion = descripcion;
 
-                    negocio.modificar(categoria);
+                    negocio.Modificar(categoria);
                     listaCategorias = negocio.Listar();
                     MessageBox.Show("Categoría modificada correctamente.");
                 }
@@ -197,7 +197,7 @@ namespace CatalogoTP1
                 if (opcion == "Categoría")
                 {
                     CategoriaNegocio negocio = new CategoriaNegocio();
-                    negocio.eliminar(id);
+                    negocio.Eliminar(id);
 
                     MessageBox.Show("Categoría eliminada correctamente.");
 

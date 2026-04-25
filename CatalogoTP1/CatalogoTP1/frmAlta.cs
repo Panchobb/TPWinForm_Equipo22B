@@ -18,39 +18,32 @@ namespace CatalogoTP1
 {
     public partial class frmAlta : Form
     {
-
+        private OpenFileDialog archivo = null;
         private Articulos articulo = null;
+
         public frmAlta()
         {
             InitializeComponent();
             this.Load += frmAgregar_Load;
-            
-            
-
         }
+
         public frmAlta(Articulos articulo)
         {
             InitializeComponent();
             this.Load += frmAgregar_Load;
-     
+
             this.articulo = articulo;
             Text = "Modificar Articulo";
         }
-
-              
-
-
 
         private void CargarImagen(string imagen)
         {
             try
             {
-                
                 pxbArticulo.Load(imagen);
             }
             catch (Exception)
             {
-
                 pxbArticulo.Load("https://capacitacion.fundacionbancopampa.com.ar/wp-content/uploads/2024/09/placeholder-4.png");
             }
         }
@@ -59,11 +52,13 @@ namespace CatalogoTP1
         {
             MarcaNegocio marcaNegocio = new MarcaNegocio();
             CategoriaNegocio categoriaNegocio = new CategoriaNegocio();
+
             try
             {
                 cbxMarca.DataSource = marcaNegocio.Listar();
                 cbxMarca.DisplayMember = "Descripcion";
                 cbxMarca.ValueMember = "Id";
+
                 cbxCategoria.DataSource = categoriaNegocio.Listar();
                 cbxCategoria.DisplayMember = "Descripcion";
                 cbxCategoria.ValueMember = "Id";
@@ -79,23 +74,28 @@ namespace CatalogoTP1
                     cbxMarca.SelectedValue = articulo.marca.Id;
                     cbxCategoria.SelectedValue = articulo.categorias.Id;
                 }
-
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error al cargar marcas y categorías: " + ex.Message);
             }
-
         }
 
+     
+
+        private void txtImagenUrl_Leave(object sender, EventArgs e)
+        {
+            CargarImagen(txtImagenUrl.Text);
+        }
 
         private void btnAceptar_Click_1(object sender, EventArgs e)
         {
-            
             ArticuloNegocio negocio = new ArticuloNegocio();
+
             try
             {
-                if(articulo == null) articulo = new Articulos();
+                if (articulo == null) articulo = new Articulos();
+
                 articulo.Codigo = txtCodigo.Text;
                 articulo.Nombre = txtNombre.Text;
                 articulo.Descripcion = txtDescripcion.Text;
@@ -114,6 +114,15 @@ namespace CatalogoTP1
                     negocio.agregar(articulo);
                     MessageBox.Show("Artículo agregado exitosamente.");
                 }
+
+                if (archivo != null && txtImagenUrl.Text.ToUpper().Contains("HTTP"))
+                {
+                    File.Copy(
+                        archivo.FileName,
+                        ConfigurationManager.AppSettings["carpeta-imagenes"] + archivo.FileName
+                    );
+                }
+
                 this.Close();
             }
             catch (FormatException)
@@ -131,6 +140,18 @@ namespace CatalogoTP1
             this.Close();
         }
 
-       
+        private void BtnAgregarImagen_Click_1(object sender, EventArgs e)
+        {
+            archivo = new OpenFileDialog();
+            archivo.Filter = "Imágenes|*.jpg;*.jpeg;*.png;*.gif;*.bmp";
+
+            if (archivo.ShowDialog() == DialogResult.OK)
+            {
+                txtImagenUrl.Text = archivo.FileName;
+                CargarImagen(archivo.FileName);
+            }
+
+        }
     }
 }
+

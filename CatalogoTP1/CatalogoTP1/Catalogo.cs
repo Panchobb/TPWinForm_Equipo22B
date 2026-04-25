@@ -79,6 +79,9 @@ namespace CatalogoTP1
 
             Articulos seleccionado = (Articulos)DgvArticulos.CurrentRow.DataBoundItem;
 
+            // CAMBIOS PANCHO 
+
+        
 
             if (seleccionado.imagenes != null && !string.IsNullOrWhiteSpace(seleccionado.imagenes.ImagenUrl))
             {

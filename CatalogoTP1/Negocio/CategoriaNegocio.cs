@@ -40,7 +40,7 @@ namespace Negocio
         }
 
 
-        public void modificar(Categorias categoria)
+        public void Modificar(Categorias categoria)
         {
 
             AccesoDatos datos = new AccesoDatos();
@@ -70,7 +70,7 @@ namespace Negocio
         }
 
 
-        public void agregar(Categorias categoriaNueva)
+        public void Agregar(Categorias categoriaNueva)
         {
 
             if (categoriaNueva.Descripcion == null)
@@ -95,7 +95,7 @@ namespace Negocio
             }
         }
 
-        public void eliminar(int id)
+        public void Eliminar(int id)
         {
             AccesoDatos datos = new AccesoDatos();
             try

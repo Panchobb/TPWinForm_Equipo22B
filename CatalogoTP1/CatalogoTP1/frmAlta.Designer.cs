@@ -45,6 +45,7 @@
             this.lblImagenUrl = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
+            this.BtnAgregarImagen = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pxbArticulo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -174,7 +175,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(28, 311);
+            this.btnCancelar.Location = new System.Drawing.Point(21, 329);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(132, 28);
             this.btnCancelar.TabIndex = 16;
@@ -184,7 +185,7 @@
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(252, 311);
+            this.btnAceptar.Location = new System.Drawing.Point(211, 329);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(132, 28);
             this.btnAceptar.TabIndex = 17;
@@ -192,11 +193,22 @@
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click_1);
             // 
+            // BtnAgregarImagen
+            // 
+            this.BtnAgregarImagen.Location = new System.Drawing.Point(143, 287);
+            this.BtnAgregarImagen.Name = "BtnAgregarImagen";
+            this.BtnAgregarImagen.Size = new System.Drawing.Size(45, 23);
+            this.BtnAgregarImagen.TabIndex = 18;
+            this.BtnAgregarImagen.Text = "+";
+            this.BtnAgregarImagen.UseVisualStyleBackColor = true;
+            this.BtnAgregarImagen.Click += new System.EventHandler(this.BtnAgregarImagen_Click_1);
+            // 
             // frmAlta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(958, 455);
+            this.Controls.Add(this.BtnAgregarImagen);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.txtImagenUrl);
@@ -241,5 +253,6 @@
         private System.Windows.Forms.Label lblImagenUrl;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnAceptar;
+        private System.Windows.Forms.Button BtnAgregarImagen;
     }
 }
