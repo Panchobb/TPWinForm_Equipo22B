@@ -90,6 +90,32 @@ namespace CatalogoTP1
 
         private void btnAceptar_Click_1(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(txtCodigo.Text))
+            {
+                MessageBox.Show("Por favor, ingrese el Código del artículo.");
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(txtNombre.Text))
+            {
+                MessageBox.Show("Por favor, ingrese el Nombre del artículo.");
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(txtPrecio.Text))
+            {
+                MessageBox.Show("Por favor, ingrese el Precio del artículo.");
+                return;
+            }
+            if (cbxMarca.SelectedIndex < 0)
+            {
+                MessageBox.Show("Por favor, seleccione una Marca.");
+                return;
+            }
+            if (cbxCategoria.SelectedIndex < 0)
+            {
+                MessageBox.Show("Por favor, seleccione una Categoría.");
+                return;
+            }
+
             ArticuloNegocio negocio = new ArticuloNegocio();
 
             try
@@ -115,11 +141,11 @@ namespace CatalogoTP1
                     MessageBox.Show("Artículo agregado exitosamente.");
                 }
 
-                if (archivo != null && txtImagenUrl.Text.ToUpper().Contains("HTTP"))
+                if (archivo != null && !txtImagenUrl.Text.ToUpper().Contains("HTTP"))
                 {
                     File.Copy(
                         archivo.FileName,
-                        ConfigurationManager.AppSettings["carpeta-imagenes"] + archivo.FileName
+                        ConfigurationManager.AppSettings["carpeta-imagenes"] + archivo.SafeFileName
                     );
                 }
 

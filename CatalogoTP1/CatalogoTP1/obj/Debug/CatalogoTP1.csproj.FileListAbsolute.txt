@@ -28,7 +28,9 @@ C:\UTN Proyectos\programacion3\CatalogoTP1\CatalogoTP1\bin\Debug\Negocio.pdb
 C:\UTN Proyectos\programacion3\CatalogoTP1\CatalogoTP1\bin\Debug\System.Configuration.ConfigurationManager.xml
 C:\UTN Proyectos\programacion3\CatalogoTP1\CatalogoTP1\obj\Debug\CatalogoTP1.csproj.AssemblyReference.cache
 C:\UTN Proyectos\programacion3\CatalogoTP1\CatalogoTP1\obj\Debug\CatalogoTP1.Catalogo.resources
-C:\UTN Proyectos\programacion3\CatalogoTP1\CatalogoTP1\obj\Debug\CatalogoTP1.frmAgregar.resources
+C:\UTN Proyectos\programacion3\CatalogoTP1\CatalogoTP1\obj\Debug\CatalogoTP1.frmAlta.resources
+C:\UTN Proyectos\programacion3\CatalogoTP1\CatalogoTP1\obj\Debug\CatalogoTP1.frmConfiguracion.resources
+C:\UTN Proyectos\programacion3\CatalogoTP1\CatalogoTP1\obj\Debug\CatalogoTP1.frmDetalle.resources
 C:\UTN Proyectos\programacion3\CatalogoTP1\CatalogoTP1\obj\Debug\CatalogoTP1.Properties.Resources.resources
 C:\UTN Proyectos\programacion3\CatalogoTP1\CatalogoTP1\obj\Debug\CatalogoTP1.csproj.GenerateResource.cache
 C:\UTN Proyectos\programacion3\CatalogoTP1\CatalogoTP1\obj\Debug\CatalogoTP1.csproj.CoreCompileInputs.cache
