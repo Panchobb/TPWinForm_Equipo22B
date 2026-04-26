@@ -106,12 +106,12 @@ namespace CatalogoTP1
 
                 if (articulo.Id != 0)
                 {
-                    negocio.modificar(articulo);
+                    negocio.Modificar(articulo);
                     MessageBox.Show("Articulo modificado exitosamente.");
                 }
                 else
                 {
-                    negocio.agregar(articulo);
+                    negocio.Agregar(articulo);
                     MessageBox.Show("Artículo agregado exitosamente.");
                 }
 
@@ -149,7 +149,11 @@ namespace CatalogoTP1
             {
                 txtImagenUrl.Text = archivo.FileName;
                 CargarImagen(archivo.FileName);
+
+               
             }
+
+            
 
         }
     }

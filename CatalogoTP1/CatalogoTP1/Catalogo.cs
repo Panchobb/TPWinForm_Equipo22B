@@ -37,11 +37,14 @@ namespace CatalogoTP1
             DgvArticulos.Columns["Imagenes"].Visible = false;
             PbxArticulos.SizeMode = PictureBoxSizeMode.Zoom;
 
-            cboCampo.Items.Add("Precio");
+            cboCampo.Items.Add("Codigo");
+          
             cboCampo.Items.Add("Nombre");
             cboCampo.Items.Add("Marca");
             cboCampo.Items.Add("Categoria");
             cboCampo.Items.Add("Descripcion");
+            cboCampo.Items.Add("Precio");
+
         }
 
         private void Cargar()
@@ -125,7 +128,7 @@ namespace CatalogoTP1
                 if (respuesta == DialogResult.Yes)
                 {
                     seleccionado = (Articulos)DgvArticulos.CurrentRow.DataBoundItem;
-                    negocio.eliminar(seleccionado.Id);
+                    negocio.Eliminar(seleccionado.Id);
                     Cargar();
                 }
             }
@@ -200,7 +203,7 @@ namespace CatalogoTP1
             Cargar();
         }
 
-      
+
 
         private void cboCampo_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -223,29 +226,44 @@ namespace CatalogoTP1
                 cboCriterio.Items.Clear();
                 cboCriterio.Items.Add("Comienza con");
                 cboCriterio.Items.Add("Termina con");
-                cboCriterio.Items.Add("contiene");
+                cboCriterio.Items.Add("Contiene");
             } else if (opcion == "Categoria")
+
             {
                 cboCriterio.Items.Clear();
                 cboCriterio.Items.Add("Comienza con");
                 cboCriterio.Items.Add("Termina con");
-                cboCriterio.Items.Add("contiene");
+                cboCriterio.Items.Add("Contiene");
             } else if (opcion == "Descripcion")
             {
                 cboCriterio.Items.Clear();
                 cboCriterio.Items.Add("Comienza con");
                 cboCriterio.Items.Add("Termina con");
-                cboCriterio.Items.Add("contiene");
+                cboCriterio.Items.Add("Contiene");
+            } else if (opcion == "Codigo")
+            {
+                cboCriterio.Items.Clear();
+                cboCriterio.Items.Add("Comienza con");
+                cboCriterio.Items.Add("Termina con");
+                cboCriterio.Items.Add("Contiene");
+
             }
           
         }
 
         private void btnDetalle_Click(object sender, EventArgs e)
+
         {
+            if (DgvArticulos.CurrentRow == null || DgvArticulos.CurrentRow.DataBoundItem == null)
+            {
+                MessageBox.Show("Seleccione un artículo para ver el detalle.");
+                return;
+            }
             Articulos seleccionado;
             seleccionado = (Articulos)DgvArticulos.CurrentRow.DataBoundItem;
             frmDetalle mostrar = new frmDetalle(seleccionado);
             mostrar.ShowDialog();
+
             Cargar();
         }
 

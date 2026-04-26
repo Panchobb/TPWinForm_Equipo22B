@@ -15,6 +15,7 @@ namespace Negocio
             {
                 datos.SetearConsulta("SELECT Id, Descripcion FROM MARCAS");
                 datos.EjecutarLectura();
+
                 while (datos.Lector.Read())
                 {
                     Marcas aux = new Marcas();

@@ -136,6 +136,7 @@
             this.Controls.Add(this.BtnModificar);
             this.Controls.Add(this.btnAgregar);
             this.Name = "frmConfiguracion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Configuración";
             this.Load += new System.EventHandler(this.frmConfiguracion_Load);
             this.ResumeLayout(false);

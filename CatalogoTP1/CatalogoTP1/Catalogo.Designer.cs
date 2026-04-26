@@ -48,6 +48,8 @@
             // 
             // DgvArticulos
             // 
+            this.DgvArticulos.AllowUserToResizeColumns = false;
+            this.DgvArticulos.AllowUserToResizeRows = false;
             this.DgvArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvArticulos.Location = new System.Drawing.Point(32, 41);
             this.DgvArticulos.Name = "DgvArticulos";
@@ -94,7 +96,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(29, 15);
+            this.label1.Location = new System.Drawing.Point(12, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(32, 13);
             this.label1.TabIndex = 5;
@@ -102,14 +104,14 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(67, 8);
+            this.textBox1.Location = new System.Drawing.Point(50, 12);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(186, 20);
             this.textBox1.TabIndex = 6;
             // 
             // btnFiltro
             // 
-            this.btnFiltro.Location = new System.Drawing.Point(654, 5);
+            this.btnFiltro.Location = new System.Drawing.Point(621, 12);
             this.btnFiltro.Name = "btnFiltro";
             this.btnFiltro.Size = new System.Drawing.Size(75, 23);
             this.btnFiltro.TabIndex = 7;
@@ -120,7 +122,7 @@
             // lblCampo
             // 
             this.lblCampo.AutoSize = true;
-            this.lblCampo.Location = new System.Drawing.Point(270, 15);
+            this.lblCampo.Location = new System.Drawing.Point(257, 17);
             this.lblCampo.Name = "lblCampo";
             this.lblCampo.Size = new System.Drawing.Size(40, 13);
             this.lblCampo.TabIndex = 9;
@@ -130,7 +132,7 @@
             // 
             this.cboCampo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCampo.FormattingEnabled = true;
-            this.cboCampo.Location = new System.Drawing.Point(316, 7);
+            this.cboCampo.Location = new System.Drawing.Point(303, 12);
             this.cboCampo.Name = "cboCampo";
             this.cboCampo.Size = new System.Drawing.Size(121, 21);
             this.cboCampo.TabIndex = 10;
@@ -139,7 +141,7 @@
             // lblCriterio
             // 
             this.lblCriterio.AutoSize = true;
-            this.lblCriterio.Location = new System.Drawing.Point(462, 15);
+            this.lblCriterio.Location = new System.Drawing.Point(444, 15);
             this.lblCriterio.Name = "lblCriterio";
             this.lblCriterio.Size = new System.Drawing.Size(39, 13);
             this.lblCriterio.TabIndex = 11;
@@ -149,14 +151,14 @@
             // 
             this.cboCriterio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCriterio.FormattingEnabled = true;
-            this.cboCriterio.Location = new System.Drawing.Point(507, 7);
+            this.cboCriterio.Location = new System.Drawing.Point(489, 12);
             this.cboCriterio.Name = "cboCriterio";
             this.cboCriterio.Size = new System.Drawing.Size(121, 21);
             this.cboCriterio.TabIndex = 12;
             // 
             // btnDetalle
             // 
-            this.btnDetalle.Location = new System.Drawing.Point(560, 426);
+            this.btnDetalle.Location = new System.Drawing.Point(32, 426);
             this.btnDetalle.Name = "btnDetalle";
             this.btnDetalle.Size = new System.Drawing.Size(75, 23);
             this.btnDetalle.TabIndex = 13;
@@ -166,7 +168,7 @@
             // 
             // btnConfiguracion
             // 
-            this.btnConfiguracion.Location = new System.Drawing.Point(820, 5);
+            this.btnConfiguracion.Location = new System.Drawing.Point(763, 12);
             this.btnConfiguracion.Name = "btnConfiguracion";
             this.btnConfiguracion.Size = new System.Drawing.Size(81, 23);
             this.btnConfiguracion.TabIndex = 14;
@@ -194,7 +196,8 @@
             this.Controls.Add(this.PbxArticulos);
             this.Controls.Add(this.DgvArticulos);
             this.Name = "Catalogo";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Listado de Articulos";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgvArticulos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PbxArticulos)).EndInit();
