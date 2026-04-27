@@ -69,10 +69,14 @@ namespace CatalogoTP1
                     txtCodigo.Text = articulo.Codigo;
                     txtDescripcion.Text = articulo.Descripcion;
                     txtPrecio.Text = articulo.Precio.ToString();
-                    txtImagenUrl.Text = articulo.imagenes.ImagenUrl;
-                    CargarImagen(articulo.imagenes.ImagenUrl);
                     cbxMarca.SelectedValue = articulo.marca.Id;
                     cbxCategoria.SelectedValue = articulo.categorias.Id;
+
+                    if (articulo.imagenes != null && articulo.imagenes.Count > 0)
+                    {
+                        txtImagenUrl.Text = articulo.imagenes[0].ImagenUrl;
+                        CargarImagen(articulo.imagenes[0].ImagenUrl);
+                    }
                 }
             }
             catch (Exception ex)
@@ -128,7 +132,12 @@ namespace CatalogoTP1
                 articulo.Precio = decimal.Parse(txtPrecio.Text);
                 articulo.marca = (Marcas)cbxMarca.SelectedItem;
                 articulo.categorias = (Categorias)cbxCategoria.SelectedItem;
-                articulo.imagenes = new Imagenes { ImagenUrl = txtImagenUrl.Text };
+
+                if (articulo.imagenes == null)
+                articulo.imagenes = new List<Imagenes>();
+
+                articulo.imagenes.Clear();
+                articulo.imagenes.Add(new Imagenes { ImagenUrl = txtImagenUrl.Text });
 
                 if (articulo.Id != 0)
                 {

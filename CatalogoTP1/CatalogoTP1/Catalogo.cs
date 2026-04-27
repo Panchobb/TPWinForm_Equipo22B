@@ -17,6 +17,7 @@ namespace CatalogoTP1
     public partial class Catalogo : Form
     {
         private List<Articulos> listaArticulos;
+        private int indiceImagen = 0;
 
         public Catalogo()
         {
@@ -30,21 +31,33 @@ namespace CatalogoTP1
         {
             ArticuloNegocio negocio = new ArticuloNegocio();
 
-            listaArticulos = negocio.listar();
-            DgvArticulos.DataSource = listaArticulos;
+            try
+            {
+                listaArticulos = negocio.listar();
+                DgvArticulos.DataSource = listaArticulos;
 
-            DgvArticulos.Columns["Id"].Visible = false;
-            DgvArticulos.Columns["Imagenes"].Visible = false;
-            PbxArticulos.SizeMode = PictureBoxSizeMode.Zoom;
+                foreach (DataGridViewColumn col in DgvArticulos.Columns)
+                {
+                    if (col.Name.ToUpper() == "ID" || col.Name.ToUpper() == "IMAGENES")
+                    {
+                        col.Visible = false;
+                    }
+                }
+                PbxArticulos.SizeMode = PictureBoxSizeMode.Zoom;
 
-            cboCampo.Items.Add("Codigo");
+                cboCampo.Items.Add("Codigo");
           
-            cboCampo.Items.Add("Nombre");
-            cboCampo.Items.Add("Marca");
-            cboCampo.Items.Add("Categoria");
-            cboCampo.Items.Add("Descripcion");
-            cboCampo.Items.Add("Precio");
+                cboCampo.Items.Add("Nombre");
+                cboCampo.Items.Add("Marca");
+                cboCampo.Items.Add("Categoria");
+                cboCampo.Items.Add("Descripcion");
+                cboCampo.Items.Add("Precio");
 
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar el catálogo: " + ex.ToString());
+            }
         }
 
         private void Cargar()
@@ -77,22 +90,19 @@ namespace CatalogoTP1
 
         private void DgvArticulos_SelectionChanged(object sender, EventArgs e)
         {
+            indiceImagen = 0;
+
             if (DgvArticulos.CurrentRow == null || DgvArticulos.CurrentRow.DataBoundItem == null)
                 return;
 
             Articulos seleccionado = (Articulos)DgvArticulos.CurrentRow.DataBoundItem;
 
-            // CAMBIOS PANCHO 
-
-        
-
-            if (seleccionado.imagenes != null && !string.IsNullOrWhiteSpace(seleccionado.imagenes.ImagenUrl))
+            if (seleccionado.imagenes != null && seleccionado.imagenes.Count > 0 && !string.IsNullOrWhiteSpace(seleccionado.imagenes[0].ImagenUrl))
             {
-                CargarImagen(seleccionado.imagenes.ImagenUrl);
+                CargarImagen(seleccionado.imagenes[0].ImagenUrl);
             }
             else
             {
-
                 CargarImagen("");
             }
         }
@@ -272,6 +282,28 @@ namespace CatalogoTP1
             frmConfiguracion configuracion = new frmConfiguracion();
             configuracion.ShowDialog();
             Cargar();
+        }
+
+        private void btnAnterior_Click(object sender, EventArgs e)
+        {
+            Articulos seleccionado = (Articulos)DgvArticulos.CurrentRow.DataBoundItem;
+
+            if (indiceImagen > 0)
+            {
+                indiceImagen--;
+                CargarImagen(seleccionado.imagenes[indiceImagen].ImagenUrl);
+            }
+        }
+
+        private void btnSiguiente_Click(object sender, EventArgs e)
+        {
+            Articulos seleccionado = (Articulos)DgvArticulos.CurrentRow.DataBoundItem;
+
+            if (indiceImagen < seleccionado.imagenes.Count - 1)
+            {
+                indiceImagen++;
+                CargarImagen(seleccionado.imagenes[indiceImagen].ImagenUrl);
+            }
         }
     }
 }

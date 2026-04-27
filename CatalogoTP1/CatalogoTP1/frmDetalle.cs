@@ -61,9 +61,13 @@ namespace CatalogoTP1
                     txtCodigo.Text = articulo.Codigo;
                     txtDescripcion.Text = articulo.Descripcion;
                     txtPrecio.Text = articulo.Precio.ToString();
-                    if(articulo.imagenes != null)  CargarImagen(articulo.imagenes.ImagenUrl);
                     cbxMarca.SelectedValue = articulo.marca.Id;
                     cbxCategoria.SelectedValue = articulo.categorias.Id;
+
+                    if (articulo.imagenes != null && articulo.imagenes.Count > 0)
+                    {
+                        CargarImagen(articulo.imagenes[0].ImagenUrl);
+                    }
                 }
 
             }
