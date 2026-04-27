@@ -58,19 +58,37 @@
     <Compile Include="Catalogo.Designer.cs">
       <DependentUpon>Catalogo.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAgregar.cs">
+    <Compile Include="frmAlta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAgregar.Designer.cs">
-      <DependentUpon>frmAgregar.cs</DependentUpon>
+    <Compile Include="frmAlta.Designer.cs">
+      <DependentUpon>frmAlta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfiguracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfiguracion.Designer.cs">
+      <DependentUpon>frmConfiguracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDetalle.Designer.cs">
+      <DependentUpon>frmDetalle.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Catalogo.resx">
       <DependentUpon>Catalogo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAgregar.resx">
-      <DependentUpon>frmAgregar.cs</DependentUpon>
+    <EmbeddedResource Include="frmAlta.resx">
+      <DependentUpon>frmAlta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfiguracion.resx">
+      <DependentUpon>frmConfiguracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDetalle.resx">
+      <DependentUpon>frmDetalle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
